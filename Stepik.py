@@ -76,25 +76,71 @@
 #
 # ###############################################################
 #Alishev LIST
+#
+# a = [3,5,20]
+# print(a)
+# a.append(15)
+# a.append('hi')
+# print(a)
+# a.append([5,6])
+# print(a)
+# a.pop()
+# print(a)
+# a[0] = 100
+# print(a)
+# a.pop(2)
+# print(a)
+# b = ['hello', 'goodbye', 'hey']
+# print(b)
+# temp = b[0]
+# b[0] = b[2]
+# b[2]  = temp
+# print(b)
+# b[0],b[2] = b[2], b[0]
+# print(b)
 
-a = [3,5,20]
-print(a)
-a.append(15)
-a.append('hi')
-print(a)
-a.append([5,6])
-print(a)
-a.pop()
-print(a)
-a[0] = 100
-print(a)
-a.pop(2)
-print(a)
-b = ['hello', 'goodbye', 'hey']
-print(b)
-temp = b[0]
-b[0] = b[2]
-b[2]  = temp
-print(b)
-b[0],b[2] = b[2], b[0]
-print(b)
+# ###############################################################
+# #Alishev ЦИКЛЫ FOR
+#
+# b = [20,30,40,50]
+# for num in b:
+#     print(num)
+#
+# total_sum = 0
+# for e in b:
+#     total_sum += e
+# print(total_sum)
+#
+# x = list(range(1,100))
+# print(x)
+# for i in range(1,100):
+#     print(i)
+#
+# total_sum2  = 0
+# for n in x:
+#     total_sum2+=n
+# print(total_sum2)
+
+
+# #Practica
+# def my_func(n,k):
+#     if n > 20:
+#         return 0
+#     s = 0
+#     for i in range(1,n):
+#         if i%2 == 0:
+#             s += i**k
+#     return s
+#
+# x = my_func(10,2)
+# print(x)
+#
+# def main():
+#     print(my_func(21,5))
+#     print(my_func(7,2))
+#     print(my_func(20,15))
+#
+# x = main()
+# print(x)
+
+
