@@ -40,3 +40,4 @@ def bmi_calc(name,height,weight):
 
 print(bmi_calc("Dima", 1.86,72))
 fv
+vf
