@@ -46,3 +46,28 @@ bmi3 = bmi_calc(name3,height3,weight3)
 print(bmi1)
 print(bmi2)
 print(bmi3)
+
+
+#1 Функция конверта миль в киллометры
+def convert(miles):
+    return miles*1.609
+
+
+a = convert(10)
+print(a)
+
+#2 area(a,b) функция подсчета плошади прямоугольника
+def area(a,b):
+    return a*b
+
+square1 = area(5,10)
+print(square1)
+
+#Функция is_even(a) четная или нечетная число
+def is_even(a):
+    if a % 2 == 0:
+        print("Четное")
+    else:
+        print('Нечетное')
+
+chislo = is_even(15)
