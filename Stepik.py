@@ -39,5 +39,3 @@ def bmi_calc(name,height,weight):
         return name + " человек имеет лишний вес"
 
 print(bmi_calc("Dima", 1.86,72))
-fv
-vf
