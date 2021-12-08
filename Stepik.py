@@ -155,26 +155,82 @@
 # while i1 < 5:
 #     total2+=i1
 #     i1+=1
-
+###############################################
+# my_list = [7,5,4,3,2,1,-5,-10,-15]
+# total3 = 0
+# i3 = 0
+# while my_list[i3] > 0:       #Вообще не рассматривает остальные числа, если доходит до отрицательного
+#     total3+=my_list[i3]
+#     i3+=1
+#
+# ###############################################
+# total4 = 0
+# for element in my_list:       #Перебером циклом FOR будем проверять каждый элемент (займет больше времени)
+#     if element > 0:
+#         total4+=element
+#
+# print(total3)
+# print(total4)
+# ###############################################
+#
+# total6 = 0
+# for element1 in my_list:
+#     if element1 <=0:
+#         break
+#     total6+=element1
+#
+# print(total6,'total6')
+# ###############################################
+# ##Мы хотим суммировать все числа списка , пока их сумма меньше 10. Как только сумма чисел > 10 - выходим
+# total5 = 0
+# i5 = 0
+# while total5 < 10 and my_list[i5] > 0:
+#     total5+=my_list[i5]
+#     i5+=1
+# print(total5)
+# ###############################################
+# ##Мы хотим суммировать все числа списка , пока их сумма меньше 10. Как только сумма чисел > 10 - выходим
+# total7 = 0
+# i7 = 0
+# for element in my_list:
+#     if total7>10:
+#         break
+#     total7+=element
+#     i7+=1
+# print(total7, 'total7')
+# ###############################################
+# my_list = [7,5,4,3,2,1]
+# total8 = 0
+# i8 = 0
+# while i8 < len(my_list) and my_list[i8] > 0:
+#     total8+=my_list[i8]
+#     i8+=1
+# print(total8,'total8')
+###############################################
+##Practica Alishev
+##Найти сумму отрицательных чисел двумя методами
+##РЕШЕНИЕ ЗАДАЧИ
 my_list = [7,5,4,3,2,1,-5,-10,-15]
-total3 = 0
-i3 = 0
-while my_list[i3] > 0:
-    total3+=my_list[i3]
-    i3+=1
+total = 0
+i = 0
+while my_list[i]>0:
+    i+=1
+    pass
+else:
+    while i<len(my_list) and my_list[i]<0:
+        total+=my_list[i]
+        i+=1
+print(total,'total While')
 
 
-total4 = 0
+total = 0
+i = 0
 for element in my_list:
-    if element > 0:
-        total4+=element
-
-print(total3)
-print(total4)
-
-total5 = 0
-i5 = 0
-while total5 < 10 and my_list[i5] > 0:
-    total5+=my_list[i5]
-    i5+=1
-print(total5)
+    if element < 0:
+        total+=my_list[i]
+        i+=1
+    else:
+        i+=1
+        pass
+print(total, 'total FOR')
+###############################################
