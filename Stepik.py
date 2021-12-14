@@ -403,35 +403,75 @@
 # else: print("False")
 
 ##############################################################################################
-a = float(input())
-b = float(input())
-c = input()
-if c == "+":
-    print(a+b)
-elif c == "-":
-    print(a-b)
-elif c == "/":
-    if b == 0:
-        print('Деление на 0!')
-        pass
-    else: print(a/b)
+##Stepik Задача сделать калькулятор
+## Мой вариант
 
-elif c == "*":
-    print(a*b)
-elif c == "mod":
-    if b == 0:
-        print('Деление на 0!')
-        pass
-    else: print(a%b)
+# a = float(input())
+# b = float(input())
+# c = input()
+# if c == "+":
+#     print(a+b)
+# elif c == "-":
+#     print(a-b)
+# elif c == "/":
+#     if b == 0:
+#         print('Деление на 0!')
+#         pass
+#     else: print(a/b)
+#
+# elif c == "*":
+#     print(a*b)
+# elif c == "mod":
+#     if b == 0:
+#         print('Деление на 0!')
+#         pass
+#     else: print(a%b)
+#
+# elif c == "pow":
+#     print(a**b)
+# elif c == "div" or '//':
+#     if b == 0:
+#         print('Деление на 0!')
+#         pass
+#     else: print(a//b)
 
-elif c == "pow":
-    print(a**b)
-elif c == "div" or '//':
-    if b == 0:
-        print('Деление на 0!')
-        pass
-    else: print(a//b)
 
+#############################################################################################
+##Stepik Задача сделать калькулятор
+## Вариант с сайта
+# a = float(input())
+# b = float(input())
+# act = input()
+#
+# if (act == "/" or act == 'div' or act == 'mod') and b == 0:
+#     c = 'Деление на 0!'
+# elif act == "+" : c = a + b
+# elif act == "-" : c = a - b
+# elif act == "/" : c = a / b
+# elif act == "*" : c = a * b
+# elif act == "mod" : c = a % b
+# elif act == "pow" : c = a ** b
+# elif act == "div" : c = a // b
+# print(c)
+
+# ##Вариант #2 с помощью словаря с методами
+# operations  = {
+#     "+": lambda x,y: x + y,
+#     "-": lambda x,y: x - y,
+#     "/": lambda x,y: x / y,
+#     "*": lambda x,y: x * y,
+#     "mod": lambda x,y: x % y,
+#     "pow": lambda x,y: x ** y,
+#     "div": lambda x,y: x // y,
+# }
+#
+# x,y = float(input()),float(input())
+# operation = input()
+# if operation in ['mod','div','/'] and y == 0:
+#     print('Деление на 0!')
+# else: print(operations[operation](x,y))
+
+########################################################################################
 
 
 
