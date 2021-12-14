@@ -403,8 +403,8 @@
 # else: print("False")
 
 ##############################################################################################
-a = int(input("Введите число а: "))
-b = int(input("Введите число b: "))
+a = float(input("Введите число а: "))
+b = float(input("Введите число b: "))
 c = input("Введите операцию :  + , - , / , * , mod , div  "
           "\nгде mod - это взятие остатка от деления"
           "\npow - возведение в степень"
@@ -416,15 +416,28 @@ if c == "+":
 elif c == "-":
     print(a-b)
 elif c == "/":
+    if b == 0:
+        print('Деление на 0')
+        pass
     print(a/b)
+
 elif c == "*":
     print(a*b)
 elif c == "mod":
+    if b == 0:
+        print('Деление на 0')
+        pass
     print(a%b)
+
 elif c == "pow":
     print(a**b)
 elif c == "div" or '//':
+    if b == 0:
+        print('Деление на 0')
+        pass
+
     print(a//b)
+
 
 
 
