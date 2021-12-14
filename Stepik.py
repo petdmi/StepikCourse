@@ -419,7 +419,7 @@ elif c == "/":
     if b == 0:
         print('Деление на 0')
         pass
-    print(a/b)
+    else: print(a/b)
 
 elif c == "*":
     print(a*b)
@@ -427,7 +427,7 @@ elif c == "mod":
     if b == 0:
         print('Деление на 0')
         pass
-    print(a%b)
+    else: print(a%b)
 
 elif c == "pow":
     print(a**b)
@@ -435,8 +435,7 @@ elif c == "div" or '//':
     if b == 0:
         print('Деление на 0')
         pass
-
-    print(a//b)
+    else: print(a//b)
 
 
 
