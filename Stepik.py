@@ -473,20 +473,109 @@
 
 ########################################################################################
 ##Задача про планировки квартир страны Малевии
-form = (input())
-if form == 'треугольник':
-    a,b,c = (int(input()),int(input()), int(input()))
-    p = (a + b + c) / 2
-    s = (p*(p-a)*(p-b)*(p-c))**(.5)
-    print(s)
-elif form == 'прямоугольник':
-    a,b = (int(input()),int(input()))
-    c = a * b
-    print(float(c))
-elif form == "круг":
-    r = int(input())
-    s  = 3.14*r**2
-    print(s)
+##Мой вариант
+# pi = 3.14
+# room = input()
+# if room == 'треугольник':
+#     a,b,c = (int(input()),int(input()), int(input()))
+#     p = (a + b + c) / 2
+#     s = (p*(p-a)*(p-b)*(p-c))**(.5)
+# elif room == 'прямоугольник':
+#     a,b = (int(input()),int(input()))
+#     s = a * b
+# elif room == "круг":
+#     r = int(input())
+#     s  = pi*r**2
+# print(float(s))
+
+########################################################################################
+##Задача про планировки квартир страны Малевии
+##Вариант с степик с лямбдой
+# pi = 3.14
+# figura = {'треугольник': [3, lambda a, b, c: ((a+b+c)/2*((a+b+c)/2-a)*((a+b+c)/2-c))**0.5],
+#           'прямоугольник': [2, lambda a,b: a*b],
+#           'круг': [1, lambda r: pi*r**2]}
+# f = input()
+# print(figura[f][1](*(float(input()) for _ in range(figura[f][0]))))
+
+########################################################################################
+# a=int(input())
+# b=int(input())
+# c=int(input())
+# if c<b<a or a==b>c:
+#  print(a)
+#  print (c)
+#  print(b)
+# elif b<c<a or a==c>b or b==c<a:
+#  print(a)
+#  print(b)
+#  print(c)
+# elif a<c<b or a==c<b or b==c>a:
+#  print(b)
+#  print(a)
+#  print(c)
+# elif c<a<b:
+#  print(b)
+#  print(c)
+#  print(a)
+# elif b<a<c or a==b<c:
+#  print(c)
+#  print(b)
+#  print(a)
+
+
+# 123, 213, 321, 132, 111, 112, 211.
+# a>b>c
+# b>a>c
+# a>c>b
+# a=b=c
+# a=c>b
+# b>a=c
+#
+# 2 2 1 a = b > c
+# 2 1 2 a = c > b
+# 1 2 2 b = c > a
+#
+# 2 1 1 a > b = c
+# 1 2 1 b > a = c
+# 1 1 2 c > a = c
+#
+# 2 2 2 a = b = c
+#
+# 1 2 3 b > a
+# 3 2 1
+# 1 3 2
+#
+#
+# a > b > c
+# b > c > a
+# c > a > b
+# b > c > a
+#
+#
+
+########################################################################################
+##Задача про программистов и их окончания
+##Мое решение
+n = int(input())
+x = (n % 100) // 10 #Получить вторую с конца цифру Например, 234 - 3
+if x == 1:
+    print(n,"программистов")
+else:
+    x = n % 10 #Получить первую с конца цифру Например: 234 - 4
+    if x == 0 or x in range(5, 10):
+        print(n, 'программистов')
+    elif x == 1:
+        print(n,"программист")
+    elif x in range(2,5):
+        print(n,"программиста")
+
+
+
+
+
+
+
 
 
 
