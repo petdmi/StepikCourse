@@ -693,18 +693,46 @@
 # print(i)
 
 ######################################################################################
-
+##Мое решение
 # a = int(input())
-# while a:
-# 	if a < 10:
-# 		a = int(input())
-# 		continue
-# 	elif a > 100:
-# 		break
-# 	print(a)
-# 	a = int(input())
+# # while a:
+# # 	if a < 10:
+# # 		a = int(input())
+# # 		continue
+# # 	elif a > 100:
+# # 		break
+# # 	print(a)
+# # 	a = int(input())
 
 ######################################################################################
+# ##Решение Stepik
+# while 1==1:
+#     a = int(input())
+#     if a > 100:
+#         break
+#     if a < 10:
+#         continue
+#     print(a)
+######################################################################################
+##Задача по циклам For сделать таблицу умножения
+# a = 7
+# b = 10
+# c = 5
+# d = 6
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# d = int(input())
+# for x in range(c,d+1):
+#     print(' ',x, end=' ')
+# for i in range(a,b+1):
+#     print('\t')
+#     print(i,end=' ')
+#     for t in range(c, d+1):
+#         print(i*t, end=' ')
+
+
 
 
 
