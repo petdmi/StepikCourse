@@ -820,19 +820,28 @@
 
 #########################################################################################
 ## Задание вывести среднее арифметическое значение кратное 3
+##Мое решение
 #a, b = (int(i) for i in input().split())
-a = int(input())
-b = int(input())
-sum  = 0
-count = 0
-for i in range(a, b+1):
-    if i % 3 == 0:
-        sum +=i
-        count +=1
-    else:
-        continue
-sr = sum/count
-print(sr)
+# a = int(input())
+# b = int(input())
+# sum  = 0
+# count = 0
+# for i in range(a, b+1):
+#     if i % 3 == 0:
+#         sum +=i
+#         count +=1
+#     else:
+#         continue
+# sr = sum/count
+# print(sr)
+#########################################################################################
+##Stepik решение
+# x = [x for x in range(int(input()),int(input()) + 1) if x % 3 == 0]
+# print(sum(x)/len(x))
+
+
+
+
 
 
 
