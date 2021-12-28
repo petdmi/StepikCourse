@@ -878,3 +878,52 @@
 # print(((genome.lower().count('c')+genome.lower().count('g'))/len(genome))*100)
 
 #####################################################################################
+## СРЕЗЫ СТРОК (SLICES)
+##Найти палиндром
+
+# stroka = "qwertyxytriwq"
+# i = 0
+# n = -1
+# for x in stroka:
+# 	if x == stroka[n]:
+# 		n-=1
+# 	else:
+# 		n = 'False'
+# 		break
+# if n == 'False':
+# 	print('Its not palindrome')
+# else:
+# 	print('Its palindrome')
+####################################################################################
+##Находим палиндром методом сравнения с перевернутой строкой
+
+# a = input("")
+# if a == a[::-1]:
+# 	print('its palindrome')
+# else: print("its not palindrome")
+#####################################################################################
+
+# s = input() #"aaaabbсaa" aAAaBbCaA
+# schetchik = 1
+# for x in range(len(s) - 1):
+# 	if s[x] == s[x + 1]:
+# 		schetchik += 1
+# 	else:
+# 		print(s[x] + str(schetchik), end='')
+# 		schetchik = 1
+# print(s[-1] + str(schetchik),end='')
+
+#####################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
