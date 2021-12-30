@@ -975,31 +975,28 @@
 
 ## для каждого элемента этого списка вывести сумму двух его соседей
 ##Мое решение
-a = [int(i) for i in input().split()]
-n = len(a)
-spisok = []
-for i in range(len(a)):
-	if len(a) == 1:
-		print(a[i])
-	else:
-		if i == 0:
-			spisok.append(a[i+1]+a[-1])
-		elif i == n-1:
-			spisok.append(a[0]+a[-2])
-		else:
-			spisok.append(a[i-1]+a[i+1])
-print(*spisok)
+# a = [int(i) for i in input().split()]
+# n = len(a)
+# spisok = []
+# for i in range(len(a)):
+# 	if len(a) == 1:
+# 		print(a[i])
+# 	else:
+# 		if i == 0:
+# 			spisok.append(a[i+1]+a[-1])
+# 		elif i == n-1:
+# 			spisok.append(a[0]+a[-2])
+# 		else:
+# 			spisok.append(a[i-1]+a[i+1])
+# print(*spisok)
 
 ##Решение STEPIK
-
-
-
-
-
+# numbers = [int(i) for i in input().split()]
+# if len(numbers) == 1:
+#     print(numbers[0])
 # else:
-# 	for i in range(a):
-# 		print(i[0], end='')
-# #[i+1]+[i[-1]]
+#     for i in range(len(numbers)):
+#         print(numbers[i - 1] + numbers[(i + 1) % len(numbers)], end=" ")
 
 
 
