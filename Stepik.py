@@ -915,7 +915,91 @@
 
 #####################################################################################
 
+# students = ['Ivan','Masha','Sasha']
+# students += ['Olga']
+# students += 'Olga'
+# print(students)
+# print(len(students))
+# a = int(input())
+# b = int(input())
+# if a < b:
+# 	for i in range(a, b + 1):
+# 		print(i)
+# else:
+# 	for x in range(a+1,b):
+# 		print(x)
 
+
+
+
+# students = ['Sasha','Ivan','Masha']
+# ordered_stud = sorted(students)
+# print(ordered_stud)
+#
+# students.sort()
+# print(students)
+
+
+# a = [1,2,3]
+# b = a
+# print(b)
+# a[1] = 10
+# print(b)
+# b[0] = 20
+# print(a)
+# a = [5,6]
+# print(b)
+
+# ##Генерация списоков STEPIK
+# a = [0 for i in range(5)]
+# print(a)
+#
+# ##Список генерирует возведение в степень каждого числа из диапазона
+# a = [i*i for i in range(5)]
+# print(a)
+
+# a = [int(i) for i in input().split()]
+# sum = 0
+# for x in a:
+# 	sum+=x
+# print(sum)
+
+# 1 3 5 6 10
+# 13 6 9 15 7
+
+# 1 3 + 10 = 13
+# 3 1 + 5 = 6
+# 5 3 + 6 = 9
+# 6 5 + 10 = 15
+# 10 6 + 1 = 7
+
+## для каждого элемента этого списка вывести сумму двух его соседей
+##Мое решение
+a = [int(i) for i in input().split()]
+n = len(a)
+spisok = []
+for i in range(len(a)):
+	if len(a) == 1:
+		print(a[i])
+	else:
+		if i == 0:
+			spisok.append(a[i+1]+a[-1])
+		elif i == n-1:
+			spisok.append(a[0]+a[-2])
+		else:
+			spisok.append(a[i-1]+a[i+1])
+print(*spisok)
+
+##Решение STEPIK
+
+
+
+
+
+# else:
+# 	for i in range(a):
+# 		print(i[0], end='')
+# #[i+1]+[i[-1]]
 
 
 
