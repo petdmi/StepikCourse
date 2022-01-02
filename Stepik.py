@@ -998,6 +998,62 @@
 #     for i in range(len(numbers)):
 #         print(numbers[i - 1] + numbers[(i + 1) % len(numbers)], end=" ")
 
+#######################################################################################
+##Sample Input 1:
+##4 8 0 3 4 2 0 3
+##1 1 2 2 3 3  -- 1 2 3
+#1 1 1 1 1 2 2 2 -- 1 2
+
+# numbers = [int(i) for i in input().split()]
+# s=[]
+# numbers.sort()
+# numbers.append(99999)
+#
+#
+# for i in range(len(numbers)-1):
+# 	if numbers[i]==numbers[i+1] and numbers[i+1] != numbers[i+2]:
+# 		s.append(numbers[i])
+# 	continue
+# print(*s)
+
+
+##Stepik решение
+# numbers, spisok = sorted(int(i) for i in input().split()), []
+# for i in range(len(numbers)-1):
+# 	if numbers[i] == numbers[i+1] and numbers[i] not in spisok:
+# 		spisok.append(numbers[i])
+# 	continue
+# for _ in spisok:
+# 	print(_,end =' ')
+
+##Stepik решение 2 метод удаления
+# numbers, spisok = sorted(int(i) for i in input().split()),[]
+# for i in numbers:
+# 	if numbers.count(i) > 1:
+# 		while numbers.count(i) != 1:
+# 			numbers.remove(i)
+# 		print(i, end= " ")
+
+##Stepik решение 3 метод count
+# numbers = [int(i) for i in input().split()]
+# s = []
+# for i in numbers:
+# 	if numbers.count(i) > 1 and i not in s:
+# 		s.append(i)
+# print(*s)
+#######################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
