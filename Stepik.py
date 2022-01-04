@@ -1042,25 +1042,259 @@
 # 		s.append(i)
 # print(*s)
 #######################################################################################
+##Генерация двухмерных списков
+# n = 3
+# a = [0]*n
+# print(a)
+# a = [[0]*n]*n
+# print(a)
+# a[0][0] = 5
+# print(a)
+#
+# a = [0*n for i in range(n)]
+# print(a)
+# a = [[0 for j in range(n)]for i in range(n)]
+# print(a)
+# a[0][0] = 5
+# print(a)
+
+##Поиск минимального значения в списке
+# a = [int(i) for i in input().split()]
+# a - 5,8,4,7,3,8
+# m = a[0]
+# for x in a:
+# 	if m > x:
+# 		m = x
+# print(m)
 
 
 
+##Вывести все элементы из списка
+# a = [[1,2,3,4],[5,6,7,],[8,9,10,11,12]]
+# for i in range(len(a)):
+# 	for j in range(len(a[i])):
+# 		print(a[i][j], end = ' ')
+# 	print()
+
+##Сложить все элементы из списка (не по индексу, а по значениям)
+# a = [[1,2,3,4],[5,6,7,],[8,9,10,11,12]]
+# sum = 0
+# for row in a:
+# 	for elm in row:
+# 		sum += elm
+# print(sum)
+
+##Создание вложенных списков
+# n = 3
+# m = 4
+# a = [0] * m
+# for i in range(n):
+# 	a[i] = [0] * m
+# 	print()
+
+##Генератор списка
+# n = 3
+# m = 4
+# a = [[0]*m for i in range(n)]
+# print(a)
+
+##Ввод двухмерного массива
+# n = int(input())
+# a = []
+# for i in range(n):
+# 	a.append([int(j) for j in input().split()])
+# print(a)
+
+##с помощью генераторов
+# n = int(input())
+# a = [[int(j) for j in input().split()] for i in range(n)]
+# print(a)
+##########################################################################################
+##Игра сапер
+# n, m , k = (int(i) for i in input().split() #n - ячейки, m - столбцы, k = количество мин
+# a = [[0 for j in range(m)] for i in range(n)] # пустая таблица из 0
+# for i in range(k):  # перебираем кол-во мин
+# 	row, col = (int(i) - 1 for i in input().split()) #записываем строку и столбец одной мины при кажом проходе
+# 	a[row][col] = -1 #записываем мину по координатам столбца и колонный
+# for i in range(n):
+# 	for j in range(m):
+# 		if a[i][j] == 0:
+# 			for di in range(-1,2):
+# 				for dj in range(-1,2)
+# 					ai = i + di
+# 					aj = j + dj
+# 					#(ai, aj)
+
+###########################################################################################
 
 
+# # print(a)
+# a = int(input())
+# sum = 0
+# sum2 = 0
+# while 1 == 1:
+# 	sum += a
+# 	sum2 += a**2
+# 	if sum == 0:
+# 		break
+# 	else: a = int(input())
+# print(sum2)
 
 
+##Решение Stepik
+# s = [int(input())]
+# while sum(s) != 0:
+# 	s.append(int(input()))
+# print(sum([i**2 for i in s]))
+#
+# a = [sum([x + y for x in range(10)]) for y in range(5)]
+# print(a)
 
 
+##ТРАНСПОНИРОВАНИЕ МАТРИЦЫ
+# l, k = 3, 6
+# m = [[i for i in range(j, j + k)] for j in range(0, l*k-1, k)]
+# print(m)
+# print(len(m[0]))
+# print(len(m))
+# n = [[m[i][j] for i in range(len(m))]for j in range(len(m[0]))]
+# print(n,end = '')
+
+# some_dict = {1:"one", "two": 2}
+#
+# if 1 in some_dict:
+# 	print('OK')
+# if "one" in some_dict.values():
+# 	print('OK2')
+# if 'two' in some_dict.keys():
+# 	print('OK3')
 
 
+#############################################################################################
+# a = [str(x) + str(y) for x in range(5) for y in range(5) if x*y != 0 and x != y]
+# print(a)
+
+# res = []
+# for x in range(5):
+# 	for y in range(5):
+# 			if x*y !=0 and x != y:
+# 				res.append(str(x)+str(y))
+#
+# print(res)
+#############################################################################################
+
+# a = [[str(x) + str(y) for x in range(4) if x != 2] for y in range(4)]
+# print(a)
 
 
+# res = []
+# for y in range(4):
+# 	rey = []
+# 	for x in range(4):
+# 		if x != 2:
+# 			rey.append(str(x) + str(y))
+# 	res.append(rey)
+# print(res)
 
 
+#############################################################################################
+
+# a = [[[str(x) + str(y) + str(z) for x in range(5) if x + y - z > 0]
+#                        		  for y in range(5) if y - z > 0]
+#                      	       	  for z in range(5) if z != 0]
+# print(a)
 
 
+# res = []
+# for z in range(5):
+# 	if z != 0:
+# 		tez = []
+# 		for y in range(5):
+# 			if y - z > 0:
+# 				tey = []
+# 				for x in range(5):
+# 					if x + y - z > 0:
+# 						tey.append(str(x) + str(y) + str(z))
+# 				tez.append(tey)
+# 		res.append(tez)
+# print(res)
+#############################################################################################
+# a = [[[x + y + z for x in 'ABC'] for y in '123'] for z in '+-*']
+# print(a)
 
+# res = []
+# for z in '+-*':
+# 	rez = []
+# 	for y in '123':
+# 		rey = []
+# 		for x in "ABC":
+# 			rey.append(x+y+z)
+# 		rez.append(rey)
+# 	res.append(rez)
+# print(res)
+##########################################################################################
+# a = [[x + y for x in 'ABCD'] for y in '123']
+# print(a)
 
+# res = []
+# for y in "123":
+# 	rey = []
+# 	for x in "ABCD":
+# 		rey.append(x+y)
+# 	res.append(rey)
+# print(res)
+########################################################################################
+##Конструкция IF ELIF так же может быть в генераторах
+# a = [x*4 if x in 'ACEG' else x*2 for x in 'ABCDEFG']
+# print(a)
+
+# res = []
+# for x in "ABCDEFG":
+# 	if x in "ACEG":
+# 		res.append(x*4)
+# 	else:
+# 		res.append(x*2)
+# print(res)
+########################################################################################
+# a = [x**2 if x % 2 == 0 else x/10 for x in range(10) if x % 3 != 0]
+# print(a)
+
+# res  = []
+# for x in range(10):
+# 	if x % 3 != 0:
+# 		if x % 2 == 0:
+# 			res.append(x**2)
+# 		else:
+# 			res.append(x/10)
+# print(res)
+# ########################################################################################
+# a =[str(x) + str(y) if x - y > 0 else str(x)*2 + str(y)*2 for x in range(4) for y in range(4)]
+# print(a)
+#
+# res = []
+# for x in range(4):
+# 	for y in range(4):
+# 		if x - y > 0:
+# 			res.append(str(x) + str(y))
+# 		else:
+# 			res.append(str(x)*2 + str(y)*2)
+# print(res)
+###################################################################################################
+# a = [[x + 10 for x in range(y + 1)] if y % 2 == 0 else [x - 10 for x in range(y + 1)] for y in range(5)]
+# print(a)
+#
+# res = []
+# for y in range(5):
+# 	rey =[]
+# 	if y % 2 == 0:
+# 		for x in range(y + 1):
+# 			rey.append(x + 10)
+# 	else:
+# 		for x in range(y + 1):
+# 			rey.append(x - 10)
+# 	res.append(rey)
+# print(res)
+#############################################################################################
 
 
 
