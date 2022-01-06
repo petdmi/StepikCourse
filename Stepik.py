@@ -1295,6 +1295,48 @@
 # 	res.append(rey)
 # print(res)
 #############################################################################################
+# ##Мое решение
+#
+# n, a,s= int(input()),  [],[]
+#
+# for i in range(1,n+1):
+# 	a.append(i)
+# for x in a:
+# 	s += [x]*x
+#
+# s = s[0:n]
+# print(*s)
+
+# ##Stepik решение (меньше памяти уходит)
+# a, b, i = int(input()), [], 1
+#
+# while len(b) < a:
+# 	b += [i]*i
+# 	i += 1
+# print(*b[0:a])
+########################################################################################################
+
+# lst = [int(i) for i in input().split()]
+# x = int(input()) # 1, 4, 5
+# if x not in lst:
+# 	print('Отсутствует')
+# for i in range(len(lst)):
+# 	if lst[i] == x:
+# 		print(i, end = ' ')
+
+
+lst = [5,8,2,7,8,8,2,4]
+x = 8
+print(lst.count(x))
+ind = 0
+for i in lst:
+	print(lst.index(x,ind))
+	while ind < len(lst):
+		ind+=1
+
+
+
+
 
 
 
