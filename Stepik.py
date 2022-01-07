@@ -1323,18 +1323,63 @@
 # for i in range(len(lst)):
 # 	if lst[i] == x:
 # 		print(i, end = ' ')
+#######################################################################################
+# n, m, k = (int(i) for i in input().split()) 	# строки, столбцы, кол-во мин
+# a = [[0 for j in range(m)] for i in range(n)] 	 # пустая таблица из 0
+# # for i in range(k): 	 # перебираем кол-во мин
+# #     rw, cl = (int(i) - 1 for i in input().split()) # записываем строку и столбец одной мины при каждом проходе
+# #     a[rw][cl] = -1 	# записываем мину по координатам столбца и колонны
+#
+# print(a)
+
+# a = [
+# 	[9,5,3],
+# 	[0,7,-1],
+# 	[-5,2,9]
+# ]
+#
+# # for i in range(3):
+# # 	for j in range(3):
+# # 		print(a[i][j], end = ' ')
+# # 	print()
+# # print('\nNEXT', )
+# for j in range(2,-1,-1):
+# 	for i in range(3):
+#
+# 		print(a[i][j], end = ' ')
+# 	print()
 
 
-lst = [5,8,2,7,8,8,2,4]
-x = 8
-print(lst.count(x))
-ind = 0
-for i in lst:
-	print(lst.index(x,ind))
-	while ind < len(lst):
-		ind+=1
+# a = [
+# 	[0,2,4,6],
+# 	[1,5,9,13],
+# 	[3,10,17,19]
+# ]
+#
+# for
+########################################################################################
+# a = []
+# n = int(input())
+# for i in range(n):
+# 	a.append([0]*n)
+#
+# for i in range(n):
+# 	for j in range(n):
+# 		if i == j :
+# 			a[i][j] = 10
+# 		elif i > j:
+# 			a[i][j] = 3
+# 		else:
+# 			a[i][j] = 5
+# for i in a:
+# 	print(i)
+########################################################################################
 
-
+stroki, stolbci , mines = [int(i) for i in input().split()]
+tabliza_iz_nulei = [[0 for j in range(stolbci)] for i in range(stroki)]
+for i in range(mines):
+	rw, cl = (int(i)-1 for i in input().split())
+	a[rw][cl] = -1
 
 
 
