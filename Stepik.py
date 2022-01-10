@@ -1375,11 +1375,59 @@
 # 	print(i)
 ########################################################################################
 
-stroki, stolbci , mines = [int(i) for i in input().split()]
-tabliza_iz_nulei = [[0 for j in range(stolbci)] for i in range(stroki)]
-for i in range(mines):
-	rw, cl = (int(i)-1 for i in input().split())
-	a[rw][cl] = -1
+# stroki, stolbci , mines = [int(i) for i in input().split()]
+# matrix = [[0 for j in range(stolbci)] for i in range(stroki)]
+# for i in range(mines):
+# 	rw, cl = (int(i)-1 for i in input().split())
+# 	matrix[rw][cl] = -1
+#
+##########################################################################
+# a = int(input())
+# b = int(input())
+# if a < b:
+# 	for i in range(a, b+1):
+# 		print(i)
+# elif a == b:
+# 	print(a)
+# else:
+# 	for i in range(a, b-1, -1):
+# 		print(i)
+###########################################################################
+
+# a = int(input())
+# b = int(input())
+# for i in range(a, b-1,-1):
+# 	if i % 2 != 0:
+# 		print(i)
+#Без использования конструкции if
+# a = int(input())
+# b = int(input())
+# for i in range(a-(a+1)%2, b-b%2, -2):
+# 	print(i)
+
+########################################################################################
+
+
+# n = 10
+# sum = 0
+# for i in range(n):
+# 	sum+=int(input())
+# print(sum)
+
+# n = int(input())
+# s = 0
+# for i in range(n):
+# 	s+=i**3
+# print(s)
+
+######################################################################
+n = 3
+s = 1
+for i in range(1,n+1):
+	s *= i
+
+print(s)
+
 
 
 
