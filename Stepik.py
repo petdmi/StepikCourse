@@ -1458,8 +1458,49 @@
 # 	sum+=x
 # 	len-=1
 
+## ФУНКЦИИ
+def min2(a,b):
+	if a<=b:
+		return a
+	return b
+
+def max2(a,b):
+	if a>=b:
+		return a
+	return b
+
+m = min2(45,30)
+print(m)
+b = max2(56,7)
+print(b)
+m = min2(min2(42,30),25)
+print(f'{m} Минимальное значение из трех')
+
+def min3(*a):
+	m = a[0]
+	for x in a:
+		if m > x:
+			m = x
+	return m
+print(min3(5,3,7,8))
 
 
+def my_range(start,stop, step = 1):
+	res = []
+	if step > 0:
+		x = start
+		while x < stop:
+			res += [x]
+			x += step
+
+	elif step < 0:
+		x = start
+		while x > stop:
+			res += [x]
+			x += step
+	return res
+
+print(my_range(2,25,3))
 
 
 
