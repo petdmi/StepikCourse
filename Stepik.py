@@ -1616,6 +1616,13 @@
 # print(*i)
 
 ##СЛОВАРИ
-d = {'C':14,"D":12,"B":13}
-for key in d:
-	print(key)
+d = {'C':14,"D":12,"B":13, 'H':15, "K":21}
+# for key, value in d.items():
+	# print(key,value, end =' ')
+
+
+def update_dictionary(d,key,value):
+	a = {}
+	d = dict(moskva = 495,piter = 812,penza = 8412 )
+	print(d)
+
