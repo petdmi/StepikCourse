@@ -1459,52 +1459,158 @@
 # 	len-=1
 
 ## ФУНКЦИИ
-def min2(a,b):
-	if a<=b:
-		return a
-	return b
+# def min2(a,b):
+# 	if a<=b:
+# 		return a
+# 	return b
+#
+# def max2(a,b):
+# 	if a>=b:
+# 		return a
+# 	return b
+#
+# m = min2(45,30)
+# print(m)
+# b = max2(56,7)
+# print(b)
+# m = min2(min2(42,30),25)
+# print(f'{m} Минимальное значение из трех')
+#
+# def min3(*a):
+# 	m = a[0]
+# 	for x in a:
+# 		if m > x:
+# 			m = x
+# 	return m
+# print(min3(5,3,7,8))
+#
+# ###########################################################################################
+# def my_range(start,stop, step = 1):
+# 	res = []
+# 	if step > 0:
+# 		x = start
+# 		while x < stop:
+# 			res += [x]
+# 			x += step
+#
+# 	elif step < 0:
+# 		x = start
+# 		while x > stop:
+# 			res += [x]
+# 			x += step
+# 	return res
+#
+# print(my_range(2,25,3))
+#
+# ###########################################################################################
+#
+# def init_values(a):
+# 	a = 100
+# 	return a
+# print(init_values(b),'print B')
 
-def max2(a,b):
-	if a>=b:
-		return a
-	return b
+###########################################################################################
 
-m = min2(45,30)
-print(m)
-b = max2(56,7)
-print(b)
-m = min2(min2(42,30),25)
-print(f'{m} Минимальное значение из трех')
-
-def min3(*a):
-	m = a[0]
-	for x in a:
-		if m > x:
-			m = x
-	return m
-print(min3(5,3,7,8))
+# def append_zero(xs):
+# 	for i in range(10):
+# 		xs.append(i)
+#
+# 	return xs
+#
+# a = []
+# print(append_zero(a))
 
 
-def my_range(start,stop, step = 1):
-	res = []
-	if step > 0:
-		x = start
-		while x < stop:
-			res += [x]
-			x += step
+# def init_b(a):
+# 	a = 100
+# 	return a
+#
+# b = 0
+# print(init_b(b))
+# print(b)
 
-	elif step < 0:
-		x = start
-		while x > stop:
-			res += [x]
-			x += step
-	return res
+####################################################################################################
+# def funr(x):
+# 	if x <= -2:
+# 		result = 1 - ((x+2)**2)
+# 	elif -2 < x <= 2:
+# 		result = -x/2
+# 	else:
+# 		result = 1 + ((x-2)**2)
+# 	return result
+# print(funr(-4.5))
+####################################################################################################
 
-print(my_range(2,25,3))
+#МОЕ РЕШЕНИЕ
+#lst = [1, 2, 3, 4, 5, 6]
+# lst = [1, 3, 5, 7]
+
+# def modify_list(l):
+# 	for i in reversed(l):
+# 		if i%2 == 1:
+# 			l.remove(i)
+# 			# if len(l) == 0:
+# 			# 	break
+# 	for key, value in enumerate(l):
+# 		l[key] = value // 2
 
 
+## РЕШЕНИЕ STEPIK МЕТОД СОЗДАНИЯ НОВОГО СПИСКА
+#lst = [1, 2, 3, 4, 5, 6]
+# def modify_list(l):
+#     b = []
+#     for x in l:
+#         if x % 2 == 0:
+#             b.append(x // 2)
+#     l[:] = b
+# modify_list(lst)
+# print(lst)
+
+## РЕШЕНИЕ STEPIK МЕТОД ГЕНЕРАТОРА
+# lst = [1, 2, 3, 4, 5, 6]
+# def modify_list(l):
+# 	"""
+#
+# 	Docstring
+# 	Печатаем Докстринги в Питоне
+# 	Тест
+#
+# 	:param l:
+# 	:return:
+# 	"""
+# 	l[:] = [i//2 for i in l if not i % 2]
+#
+# modify_list(lst)
+# print(lst)
+# print(modify_list.__doc__)
 
 
+##ВЛОЖЕННАЯ ФУНКЦИЯ
+# def message(x):
+# 	def print_message(y):
+# 		return x, y
+# 	return print_message
+#
+# d = message(4)
+# print(d(5))
+# print(d(8))
 
 
+#################################################################################################
+##МНОЖЕСТВА
+s = set()
+print(type(s))
+print(s)
+s.add('mama')
+s.add('papa')
+s.add('hermana')
+print(s)
+s.remove('hermana')
+print(s)
 
+basket = {'orange','apple','pear','banana','strawberry','cherry'}
+for x in basket:
+	print(x)
+
+i = [x for x in basket]
+print(*i)
