@@ -1598,19 +1598,24 @@
 
 #################################################################################################
 ##МНОЖЕСТВА
-s = set()
-print(type(s))
-print(s)
-s.add('mama')
-s.add('papa')
-s.add('hermana')
-print(s)
-s.remove('hermana')
-print(s)
+# s = set()
+# print(type(s))
+# print(s)
+# s.add('mama')
+# s.add('papa')
+# s.add('hermana')
+# print(s)
+# s.remove('hermana')
+# print(s)
 
-basket = {'orange','apple','pear','banana','strawberry','cherry'}
-for x in basket:
-	print(x)
+# basket = {'orange','apple','pear','banana','strawberry','cherry'}
+# for x in basket:
+# 	print(x)
+#
+# i = [x for x in basket]
+# print(*i)
 
-i = [x for x in basket]
-print(*i)
+##СЛОВАРИ
+d = {'C':14,"D":12,"B":13}
+for key in d:
+	print(key)
