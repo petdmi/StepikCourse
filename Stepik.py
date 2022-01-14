@@ -1621,8 +1621,54 @@ d = {'C':14,"D":12,"B":13, 'H':15, "K":21}
 	# print(key,value, end =' ')
 
 
-def update_dictionary(d,key,value):
-	a = {}
-	d = dict(moskva = 495,piter = 812,penza = 8412 )
-	print(d)
+# def update_dictionary(d,key,value):
+# 	d = {}
+# 	if key in d:
+# 		d[key] = value
+# 	elif key not in d:
+# 		key = 2*key
+# 		d[] = value
+# 	else:
+# 		d = dict(key=value)
+#
+# 		# d = dict(moskva = 495,piter = 812,penza = 8412 )
+# 	print(d)
+#######################################################################################################
+# d = {}
+# def update_dictionary(d,key,value):
+# 	if key in d:
+# 		d[key].append(value)
+# 	elif key not in d:
+# 		if key*2 in d:
+# 			d[key*2].append(value)
+# 		else: d[key*2] = [value]
+# 	return d
+#
+# print(update_dictionary(d,1,-1))
+# print(update_dictionary(d,2,-2))
+# print(update_dictionary(d,1,-3))
 
+#######################################################################################################
+# stroka = str(input().lower())
+# stroka = stroka.split()
+#
+# d = {}
+# for item in stroka:
+# 	x = stroka.count(item)
+# 	if item not in d:
+# 		d[item] = x
+# for key,value in d.items():
+# 	print(key,value)
+
+############################################################################################################
+
+d = {}
+n = int(input())
+for _ in range(1,n+1):
+	x = int(input())
+	if x in d:
+		print(d[x])
+
+	elif x not in d:
+		d[x] = f(x)
+		print(d[x])
