@@ -1616,7 +1616,7 @@
 # print(*i)
 
 ##СЛОВАРИ
-d = {'C':14,"D":12,"B":13, 'H':15, "K":21}
+# d = {'C':14,"D":12,"B":13, 'H':15, "K":21}
 # for key, value in d.items():
 	# print(key,value, end =' ')
 
@@ -1662,13 +1662,101 @@ d = {'C':14,"D":12,"B":13, 'H':15, "K":21}
 
 ############################################################################################################
 
-d = {}
-n = int(input())
-for _ in range(1,n+1):
-	x = int(input())
-	if x in d:
-		print(d[x])
+# d = {}
+# n = int(input())
+# for _ in range(1,n+1):
+# 	x = int(input())
+# 	if x in d:
+# 		print(d[x])
+#
+# 	elif x not in d:
+# 		d[x] = f(x)
+# 		print(d[x])
 
-	elif x not in d:
-		d[x] = f(x)
-		print(d[x])
+###########################################################################################################
+# # Sample Input 1:
+# #aaaabbcaa
+# # Sample Output 1:
+# # a4b2c1a2
+# s = input()
+#
+#
+# schetchik = 1
+# for x in range(len(s) - 1):
+# 	if s[x] == s[x + 1]:
+# 		schetchik += 1
+# 	elif s[x] != s[x + 1]:
+# 		print(s[x] + str(schetchik), end='')
+# 		schetchik = 1
+# print(s[-1] + str(schetchik),end='')
+#################################################################################################
+# s1 = open(r"C:\\Users\\Дмитрий\\Desktop\\dataset_3363_2.txt",'r').
+# s = s1.readline()
+#
+# # digits = ['0','1','2','3','4','5','6','7','8','9']
+# def digits():
+# 	a = []
+# 	for i in range(0, 100):
+# 		a.append(i)
+# 	return str(a)
+# digits()
+# for x in range(len(s)):
+# 	if s[x] in digits():
+# 		schetchik = (s[x])
+# 		print((s[x-1]*int(schetchik)), end='')
+#
+# s1.close()
+
+
+# s = 'G17w19J6K11'
+# digits = []
+# alph = []
+# for i in range(len(s)+1):
+# 	if s[i].isalpha():
+# 		alph.append(s[i])
+# 		continue
+# 	elif s[i].isdigit():
+# 		if s[i+1].isdigit():
+# 			digits.append(s[i]+s[i+1])
+# 		else: digits.append(s[i])
+# print(digits)
+
+s1 = 'G17w19J6K11'
+l = len(s1)
+s = s1.ljust(l+2,'*')
+print(s)
+q = []
+b = []
+n = ''
+bu = ''
+for i in s:
+	if i.isdigit():
+		n+=i
+	else:
+		if n.isdigit():
+			q.append((n))
+			n=''
+for y in s:
+	if y.isalpha():
+
+
+print(q)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
