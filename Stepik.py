@@ -1721,26 +1721,39 @@
 # 		else: digits.append(s[i])
 # print(digits)
 
-s1 = 'G17w19J6K11'
-l = len(s1)
-s = s1.ljust(l+2,'*')
-print(s)
+
+s1 = open(r"C:\\Users\\Дмитрий\\Desktop\\dataset_3363_2.txt",'r')
+s2 = s1.readline()
+l = len(s2)
+s = s2.ljust(l+2,'*')
+
 q = []
 b = []
 n = ''
 bu = ''
 for i in s:
 	if i.isdigit():
-		n+=i
+		n += i
 	else:
 		if n.isdigit():
 			q.append((n))
-			n=''
+			n = ''
 for y in s:
 	if y.isalpha():
+		bu += y
+	else:
+		if bu.isalpha():
+			b.append(bu)
+			bu = ''
 
+new = [int(i) for i in q]
 
-print(q)
+last = []
+sch = 0
+for i in b:
+	last.append(i*new[sch])
+	sch+=1
+print(''.join(last))
 
 
 
