@@ -1722,54 +1722,78 @@
 # print(digits)
 
 
-s1 = open(r"C:\\Users\\Дмитрий\\Desktop\\dataset_3363_2.txt",'r')
-s2 = s1.readline()
-l = len(s2)
-s = s2.ljust(l+2,'*')
-
-q = []
-b = []
-n = ''
-bu = ''
-for i in s:
-	if i.isdigit():
-		n += i
-	else:
-		if n.isdigit():
-			q.append((n))
-			n = ''
-for y in s:
-	if y.isalpha():
-		bu += y
-	else:
-		if bu.isalpha():
-			b.append(bu)
-			bu = ''
-
-new = [int(i) for i in q]
-
-last = []
-sch = 0
-for i in b:
-	last.append(i*new[sch])
-	sch+=1
-print(''.join(last))
-
-
+# s1 = open(r"C:\\Users\\Дмитрий\\Desktop\\dataset_3363_2.txt",'r')
+# s2 = s1.readline()
+# l = len(s2)
+# s = s2.ljust(l+2,'*')
+#
+# q = []
+# b = []
+# n = ''
+# bu = ''
+# for i in s:
+# 	if i.isdigit():
+# 		n += i
+# 	else:
+# 		if n.isdigit():
+# 			q.append((n))
+# 			n = ''
+# for y in s:
+# 	if y.isalpha():
+# 		bu += y
+# 	else:
+# 		if bu.isalpha():
+# 			b.append(bu)
+# 			bu = ''
+#
+# new = [int(i) for i in q]
+#
+# last = []
+# sch = 0
+# for i in b:
+# 	last.append(i*new[sch])
+# 	sch+=1
+# print(''.join(last))
 
 
+# a, b = input().split()
+# print((a+' ')*2 + (b+' ')*3)
 
 
+# a, b  = input().split()
+# print('Переменная a = {0}, переменная b = {1}'.format(a,b))
 
+# a = input()
+# print("Строка: "+a+". Длина:" + str(len(a)))
 
+# a,b = input().split()
+# print(a in b, a == b, a > b, a < b)
 
+# a,z = input().split()
+# print("Коды: "+a+" = "+str(ord(a))+", "+z+ " = " +str(ord(z)))
 
+# a = input()
+# print(a[0]+a[-1])
 
+# a = input()
+# print(a[:4])
 
+# a = input()
+# print(a[-3:])
 
+# a = input()
+# print(a[1:len(a):2])
 
+# a = input()
+# b = input()
+# print(a[0:len(a):2]+" "+b[1:len(b):2])
 
+# a = input()
+# print(a[4::-1])
 
+# a,b = input().split()
+# print(b[0:len(a)])
 
-
+# a,b = input().split()
+# print(a[1:len(b):2] == b[1:len(b):2])
 
