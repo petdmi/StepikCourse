@@ -1825,8 +1825,24 @@
 
 # print(input().rjust(3,'0'))
 
-type = """
-hello
-python
-"""
-print(type)
+# type = """
+# hello
+# python
+# """
+# print(type)
+#
+# a = "Тема занятия \"спецсимволы\""
+
+
+# a = "Hello Balakirev!"
+# print(a.replace(' ','\\'))
+
+
+# a = "My best friend is Python!"
+# print(input().replace(' ','\'',1).replace(' ','\"'))
+
+
+# print(r'C:\WINDOWS\System32\drivers\etc\hosts')
+
+a = "language"
+print('\"'+input()+'\"')
