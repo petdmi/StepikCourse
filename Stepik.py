@@ -1797,3 +1797,36 @@
 # a,b = input().split()
 # print(a[1:len(b):2] == b[1:len(b):2])
 
+# a = input()
+# x = len(a)
+# print(a[0].upper()+a[1:x].lower())
+
+# a = input()
+# print(a.count('-'))
+
+# a = input()
+# print(a.find('ra'))
+
+
+# a = input()
+# x = a.replace('---','-')
+# print(x.replace('--','-'))
+
+# print(input().replace('---','-').replace('--','-'))
+
+# a,b,c = (input().split())
+# print(a.rjust(3,'0'),b.rjust(3,'0'),c.rjust(3,'0'), sep = '\n')
+
+# a = input()
+# print(a.count(' ')+1)
+
+
+# print(input().replace(' ',';'))
+
+# print(input().rjust(3,'0'))
+
+type = """
+hello
+python
+"""
+print(type)
