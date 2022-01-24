@@ -1844,5 +1844,53 @@
 
 # print(r'C:\WINDOWS\System32\drivers\etc\hosts')
 
-a = "language"
-print('\"'+input()+'\"')
+# a = "language"
+# print('\"'+input()+'\"')
+
+# name = input()
+# surname = input()
+# age = input()
+# print(f'Уважаемый {name} {surname}! Поздравляем Вас с {int(age)}-летием!')
+
+# shirina, glubina, vysota = input().split()
+# print("Габариты: {a} x {b} x {c}".format(a = shirina,b = glubina,c = vysota))
+
+# a, b = input().split()
+# min = min(a,b)
+# max = max(a,b)
+#
+# print(f'{min} {max}')
+
+# city = input()
+# street = input()
+# house = int(input())
+# apt = int(input())
+# print(f"г. {city}, ул. {street}, д. {house}, кв. {apt}")
+
+##################################################################################################
+# import math
+# kurs = float(input())
+# sum = input()
+# res = int(sum)/int(kurs)
+# print(f'Вы можете получить {math.floor(res)}$ за {sum} рублей по курсу {kurs}')
+
+
+# spisok = [1,3,2,6,5,4,7]
+# t_s = sorted(spisok,reverse=True)
+#
+# print(t_s)
+###############################################################################################
+##СОЗДАТЬ СПИСОК
+
+# lst = []
+# a, b, c = map(int, input().split())
+# lst.append(a)
+# lst.append(b)
+# lst.append(c)
+# print(lst)
+
+###############################################################################################
+
+lst = list(map(int, input().split()))
+print(lst)
+###############################################################################################
