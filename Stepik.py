@@ -2596,6 +2596,28 @@ Sample Output:
 """
 ######################################################################################################
 k = int(input())
+if 1 <= k <= 365:
+	if k in range(1,366,7):
+		print('понедельник')
+	elif k in range(2,360,7):
+		print('вторник')
+	elif k in range(3,361,7):
+		print('среда')
+	elif k in range(4, 362, 7):
+		print('четверг')
+	elif k in range(5, 363, 7):
+		print('пятница')
+	elif k in range(6, 364, 7):
+		print('суббота')
+	else:
+		print('воскресенье')
+
+
+
+
+
+
+
 
 
 
