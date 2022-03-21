@@ -3451,8 +3451,19 @@ Sample Output:
 ДА
 """
 lst = list(map(str,input().split()))
+count = 0
+for i in range(len(lst)-1):
+	if lst[i][-1].lower() == lst[i+1][0].lower():
+		count = 1
+	elif lst[i][-1] == "ъ" or lst[i][-1] == "ь" or  lst[i][-1] == "ы":
+		if lst[i][-2].lower() == lst[i+1][0].lower():
+			count = 1
+	else:
+		count = 0
+		break
 
-print(lst)
+print('ДА' if count == 1 else 'НЕТ')
+
 
 ######################################################################################################
 
