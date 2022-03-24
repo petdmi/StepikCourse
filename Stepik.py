@@ -3597,24 +3597,16 @@ Sample Output:
 ######################################################################################################
 n = input()
 #10+25 - 12
-# digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-
-# opers = ['+', '-']
-
-for i in range(len(n)):
-    new_n = n.replace(' ', '')
-
-for i in range(len(new_n)):
-    neshka = new_n.replace('+',' + ').replace('-', ' - ')
+n = n.replace(' ', '').replace('+',' + ').replace('-', ' - ').split()
 
 sum = 0
 
-for i in range(len(neshka.split())):
-    if neshka[i].split().isdigit():
-        if neshka[i-1].split() == '-':
-            sum -= int(neshka[i].split())
+for i in range(len(n)):
+    if n[i].isdigit():
+        if n[i-1] == '-':
+            sum -= int(n[i])
         else:
-            sum += int(neshka[i].split())
+            sum += int(n[i])
 print(sum)
 
 ######################################################################################################
