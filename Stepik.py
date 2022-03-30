@@ -3878,14 +3878,16 @@ model-mtv-marshrutizaciya-funkcii-predstavleniya
 marshrutizaciya-obrabotka-isklyucheniy-zaprosov-perenapravleniya
 """
 ######################################################################################################
-url1 = list(map(str,input()))
-url2 = list(map(str,input()))
-url3 = list(map(str,input()))
-# print(url1)
-# print(url2)
-# print(url3)
-for i in range(len(url1)):
-	print(url1)
+# url1 = list(map(str,input().join()))
+# url2 = list(map(str,input().split()))
+# url3 = list(map(str,input().split()))
+
+url = ['django chto  eto takoe    poryadok ustanovki',
+	   'model mtv   marshrutizaciya funkcii  predstavleniya',
+	   'marshrutizaciya  obrabotka isklyucheniy       zaprosov perenapravleniya']
+
+for i,d in enumerate(url):
+		print('-'.join(url[i].split()))
 ######################################################################################################
 
 ######################################################################################################
