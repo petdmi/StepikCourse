@@ -3853,19 +3853,39 @@ Sample Output:
 1 1 1 5
 """
 ######################################################################################################
-N = int(input())
-spisok = []
-for _ in range(N):
-	spisok.append([1]*(N-1))
-for i in spisok:
-	print(*i + [5])
-
-
+# N = int(input())
+# spisok = []
+# for _ in range(N):
+# 	spisok.append([1]*(N-1))
+# for i in spisok:
+# 	print(*i + [5])
 
 ######################################################################################################
-
+"""
+Подвиг 2. Вводится список из URL-адресов (каждый с новой строки). 
+Требуется в них заменить все пробелы на символ дефиса (-). 
+Следует учесть, что может быть несколько подряд идущих пробелов.
+Результат преобразования вывести 
+на экран в виде строк из URL-адресов.
+P. S. Для считывания списка целиком в программе уже записаны начальные строчки.
+Sample Input:
+django chto  eto takoe    poryadok ustanovki
+model mtv   marshrutizaciya funkcii  predstavleniya
+marshrutizaciya  obrabotka isklyucheniy       zaprosov perenapravleniya
+Sample Output:
+django-chto-eto-takoe-poryadok-ustanovki
+model-mtv-marshrutizaciya-funkcii-predstavleniya
+marshrutizaciya-obrabotka-isklyucheniy-zaprosov-perenapravleniya
+"""
 ######################################################################################################
-
+url1 = list(map(str,input()))
+url2 = list(map(str,input()))
+url3 = list(map(str,input()))
+# print(url1)
+# print(url2)
+# print(url3)
+for i in range(len(url1)):
+	print(url1)
 ######################################################################################################
 
 ######################################################################################################
