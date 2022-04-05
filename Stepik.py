@@ -4072,18 +4072,32 @@ Sample Output:
 64 64 64 16 8 4 1
 """
 ######################################################################################################
-n = int(input())
-kupyury = [1,2,4,8,16,32,64]
-
-print(sorted(kupyury, reverse=True))
-
-for i in range(len(sorted(kupyury, reverse=True))):
-	if n // i == 0:
-		print(i)
-
+##Вариант 1
+# n = int(input())
+# kupyury = [1,2,4,8,16,32,64]
+#
+# lens = len(kupyury)
+# for i in range(lens):
+# 	for k in range(i+1, lens):
+# 		if kupyury[k] > kupyury[i]:
+# 			kupyury[k], kupyury[i] = kupyury[i], kupyury[k]
+# res = []
+# for j in kupyury:
+# 	while n >= j:
+# 		n -= j
+# 		res.append(j)
+# print(*res)
 
 ######################################################################################################
-
+##Вариант 2 без списка купюр. генерируем список самостоятельно
+n = int(input())
+money = []
+for i in range(6, -1, -1):
+	money.append(2**i)
+	for j in money:
+		while n >= j:
+			print(j, end = ' ')
+			n -= j
 ######################################################################################################
 
 ######################################################################################################
