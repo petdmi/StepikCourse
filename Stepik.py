@@ -4342,19 +4342,46 @@ Sample Output:
 [['Москва', 15000], ['Уфа', 1200], ['Самара', 1090], ['Казань', 1300]]
 """
 ######################################################################################################
-n = list(input().split())
-print(n)
+##Выполнение задания через цикл FOR
+# n = list(input().split())
+# lst = []
+# lst_small = []
+# for i in range(0, len(n), 2):
+# 	lst_small.append(n[i])
+# 	lst_small.append(int(n[i + 1]))
+# 	lst.append(lst_small)
+# 	lst_small = []
+# print(lst)
 
-lst_small = []
-lst_big = []
-for x in n:
+##Генератор списка
+# n = list(input().split())
+# lst = [[n[i], int(n[i+1])] for i in range(0, len(n), 2)]
+# print(lst)
 
-	lst_small.append(x)
-	lst_small.append(x+1)
-	print(lst_small)
+# a = [(i,j)
+# 	 for i in range(3) if j%3 == 0
+# 	 for j in range(2) if j%2 == 0
+# 	 ]
+# print(a)
 
+##Таблица умножения
+# a = [f"{i}*{j} = {i*j}"
+# 	 for i in range(3)
+# 	 for j in range(4)
+# 	 ]
+# print(a)
 
+##Перебор матрицы
+matrix = [[1,2,3,4],
+		  [10,11,12,13],
+		  [20,21,22,23]
+]
 
+a = [x
+	 for row in matrix
+	 for x in row
+	 ]
+print(a)
 ######################################################################################################
 
 ######################################################################################################
