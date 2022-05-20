@@ -4483,48 +4483,22 @@ Sample Output:
 ['рубили', 'тогда!']]
 """
 ######################################################################################################
-t = ["– Скажи-ка, дядя, ведь не даром",
-    "Я Python выучил с каналом",
-    "Балакирев что раздавал?",
-    "Ведь были ж заданья боевые,",
-    "Да, говорят, еще какие!",
-    "Недаром помнит вся Россия",
-    "Как мы рубили их тогда!"
-    ]
+#решение через циклы for
+lst = []
+d = []
+for x in t:
+    d = []
+    x = x.split()
+    lst.append(d)
+    for y in x:
+        if len(y) >3:
+            d.append(y)
+print(lst)
 
 
-# it = iter(t)
-# d = len(t)
-
-N = [[x for x in len(t)] for y in range(len(t))]
+##решение через вложенные генераторы
+N = [[y for y in x.split() if len(y) > 3] for x in t]
 print(N)
-
-
-# big = []
-# small = []
-# for i in t:
-# 		small.append(i.split())
-# 		for y in small:
-# 			if len(y) > 3:
-# 				big.append(y)
-# print(big)
-
-#
-# a = []
-#
-# for i in t:
-#     a = i.split()
-#
-# print(a)
-
-# text = ['один два три четыре пять']
-# b = []
-# for i in text:
-# 		a = i.split()
-#
-# print(a)
-
-
 
 
 
